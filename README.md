@@ -1,7 +1,7 @@
 # ml_build_jrc
 machine learning build for docker
 
-0. !!!IF NOT SUDO WITH FULL PERMISSIONS!!! Before building the dockerfile make the working directory (/data) accessible to the R container by running this command inside EACH directory:
+0. !!! IF NOT SUDO WITH FULL PERMISSIONS !!! Before building the dockerfile make the working directory (/data) accessible to the R container by running this command inside EACH directory you plan to save in:
 
    chmod -R 777 <dir>
 
