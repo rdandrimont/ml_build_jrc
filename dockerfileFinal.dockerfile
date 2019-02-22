@@ -23,12 +23,12 @@ RUN apt-get update && \
 
 #get Tensorflow in
 RUN apt-get update && \
-  apt install python3-dev python3-pip
+  apt install python3-dev python3-pip -y
 
-RUN pip install --upgrade pip
-RUN pip install argparse
-RUN pip install pillow
-RUN pip install --upgrade tensorflow
+RUN pip3 install --upgrade pip
+RUN pip3 install argparse
+RUN pip3 install pillow
+RUN pip3 install --upgrade tensorflow
 
 #R package list
 RUN Rscript -e "install.packages('raster')"
